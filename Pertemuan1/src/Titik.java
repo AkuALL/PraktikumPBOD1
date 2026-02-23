@@ -1,5 +1,5 @@
 // Nama file : Titik.java
-// Deskripsi : berisi atribut dan method dalam class Titik
+// Deskripsi : berisi atribut dan method dalam class Titik.
 // Pembuat : 24060124120030 - An Al Rivaldi
 // Tanggal : 22 Februari 2026
 
@@ -8,7 +8,7 @@ public class Titik {
     double absis;
     double ordinat;
 
-    // METHOD
+    // METHOD 
     // Konstruktor untuk membuat titik (0, 0)
     Titik() {
         absis = 0;
