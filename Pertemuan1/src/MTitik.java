@@ -1,3 +1,7 @@
+// Nama file : Titik.java
+// Deskripsi : berisi atribut dan method dalam class Titik
+// Pembuat : 24060124120030 - An Al Rivaldi
+// Tanggal : 22 Februari 2026
 public class MTitik {
     public static void main(String[] args) {
         Titik T1 = new Titik();
