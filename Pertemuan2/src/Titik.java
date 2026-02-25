@@ -5,13 +5,13 @@
  */
 
 public class Titik {
-    /**************** METHOD ****************/
+    /**************** ATRIBUT ****************/
     double absis;
     double ordinat;
     static int counterTitik = 0;
 
     /**************** METHOD ****************/
-    // Konstruktor untuk membuat dengan nilai absis dan ordinat tertentu
+    // Konstruktor untuk membuat titik dengan nilai absis dan ordinat tertentu
     Titik(double absis, double ordinat) {
         this.absis = absis;
         this.ordinat = ordinat;
@@ -61,20 +61,21 @@ public class Titik {
             return 2;
         } else if (this.absis < 0 && this.ordinat < 0) {
             return 3;
-        } else {
+        } else if (this.absis > 0 && this.ordinat < 0) {
             return 4;
+        } else {
+            return 0;
         }
     }
 
     // Menghitung jarak titik terhadap titik (0, 0)
     double getJarakPusat() {
-        return (double) Math.sqrt((this.absis * this.absis) + (this.ordinat * this.ordinat));
+        return (double) Math.sqrt(Math.pow(this.absis, 2) + Math.pow(this.ordinat,2));
     }
 
     // Menghitung jarak titik T2 terhadap titik
     double getJarak(Titik T2){
-        return (float) Math.sqrt((T2.getAbsis()-this.absis)*(T2.getAbsis()-this.absis) - (T2.getOrdinat()-this.ordinat)*(T2.getOrdinat()-this.ordinat));
-    }
+        return Math.sqrt(Math.pow(T2.getAbsis() - this.absis, 2) + Math.pow(T2.getOrdinat() - this.ordinat, 2));    }
 
     // Melakukan refleksi terhadap sumbu X
     void refleksiX() {
@@ -88,16 +89,12 @@ public class Titik {
 
     // Menghasilkan sebuah titik baru yang merupakan hasil refleksi sumbu X dari sebuah objek titik
     Titik getRefleksiX() {
-        Titik T1 = new Titik();
-        T1.ordinat = this.ordinat * (-1);
-        return T1;
+        return new Titik(absis, ordinat * (-1));
     }
 
     // Menghasilkan sebuah titik baru yang merupakan hasil refleksi sumbu Y dari sebuah objek titik
     Titik getRefleksiY() {
-        Titik T1 = new Titik();
-        T1.absis = T1.getAbsis() * (-1);
-        return T1;
+        return new Titik(absis*(-1), ordinat);
     }
 
     // Mencetak koordinat titik
@@ -105,7 +102,7 @@ public class Titik {
         System.out.println("Titik (" + absis + ", " + ordinat + ")");
     }
 
-    // // Mencetak nilai counterTitik
+    // Mencetak nilai counterTitik (WARNING counterTitik merupakan atribut statis)
     // void printCounterTitik() {
     //     System.out.println(this.counterTitik);
     // }

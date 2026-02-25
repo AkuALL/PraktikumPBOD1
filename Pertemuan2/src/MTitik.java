@@ -54,8 +54,8 @@ public class MTitik {
 
         /***************Titik T6***************/
         System.out.println("\nTitik T6");
-        System.out.println("Koordinat Titik T6 yang diperoleh dari refleksi Titik T1 terhadap sumbu Y: ");
-        T1.getRefleksiY().printTitik();
+        System.out.println("Koordinat Titik T6 yang diperoleh dari refleksi Titik T4 terhadap sumbu Y: ");
+        T4.getRefleksiY().printTitik();
 
 
         System.out.println("Jumlah Objek Titik = " + Titik.getCounterTitik());
