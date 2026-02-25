@@ -89,7 +89,7 @@ public class Titik {
     // Menghasilkan sebuah titik baru yang merupakan hasil refleksi sumbu X dari sebuah objek titik
     Titik getRefleksiX() {
         Titik T1 = new Titik();
-        T1.ordinat = T1.getOrdinat() * (-1);
+        T1.ordinat = this.ordinat * (-1);
         return T1;
     }
 
