@@ -24,31 +24,61 @@ public class Garis {
         counterGaris++;
     }
 
+    // Mengembalikan Titik Awal dari garis
     Titik getTitikAwal() {
         return titikAwal;
     }
 
+    // Mengembalikan Titik Akhir dari garis
     Titik getTitikAkhir() {
         return titikAkhir;
     }
 
+    // Mengembalikan nilai counterGaris
     static int getCounterGaris() {
         return counterGaris;
     }
 
+    // Mengeset Titik Awal garis dengan nilai baru X
     void setTitikAwal(Titik X) {
         titikAwal = X;
     }
 
+    // Mengeset Titik Akhir garis dengan nilai baru Y
     void setTitikAkhir(Titik Y) {
         titikAkhir = Y;
     }
 
+    // Mengembalikan nilai dari panjang sebuah garis
     double getPanjangGaris() {
         return Math.sqrt(Math.pow(titikAkhir.getAbsis() - titikAwal.getAbsis(), 2) + Math.pow(titikAkhir.getOrdinat() - titikAwal.getOrdinat(), 2));
     }
 
+    // Mengembalikan nilai dari gradien sebuah garis
     double getGradienGaris() {
         return (titikAkhir.getOrdinat() - titikAwal.getOrdinat()) / (titikAkhir.getAbsis() - titikAwal.getAbsis());
     }
-}
+
+    // Mengembalikan koordinat titik tengah dari sebuah garis
+    Titik getMidPointGaris() {
+        return new Titik((titikAkhir.getAbsis() + titikAwal.getAbsis())/2, (titikAkhir.getOrdinat()+titikAwal.getOrdinat())/2);
+    }
+
+    // Mengembalikan nilai true jika dua buah garis sejajar
+    boolean isGarisSejajar(Garis G1) {
+        if (G1.getGradienGaris() == this.getGradienGaris()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // Mengembalikan nilai true jika dua buah garis tegak lurus
+    boolean isGarisTegakLurus(Garis G1) {
+        if (G1.getGradienGaris() * this.getGradienGaris() == -1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+} // End Class Garis
