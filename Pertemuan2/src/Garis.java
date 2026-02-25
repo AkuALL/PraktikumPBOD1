@@ -3,6 +3,7 @@
  * Pembuat      : 24060124120030 - An Al Rivaldi
  * Tanggal      : 25 Februari 2026
  */
+
 public class Garis {
     /**************** ATRIBUT ****************/
     Titik titikAwal;
@@ -80,5 +81,15 @@ public class Garis {
         } else {
             return false;
         }
+    }
+
+    // Menampilkan titik awal dan titik akhir dari garis
+    void printGaris() {
+        System.out.println("Titik Awal (" + titikAwal.getAbsis() + ", " + titikAwal.getOrdinat() + "), Titik Akhir (" + titikAkhir.getAbsis() + ", " + titikAkhir.getOrdinat() + ")");    
+    }
+
+    // Menampilkan persamaan garis dalam bentuk (y = mx + c)
+    void printPersamaanGaris() {
+        System.out.println("y = " + getGradienGaris() + "x" + " + " + (titikAkhir.getOrdinat() - getGradienGaris()*titikAkhir.getAbsis()));
     }
 } // End Class Garis
