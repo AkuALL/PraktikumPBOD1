@@ -54,4 +54,4 @@ public class MataKuliah {
     public void setSks(int SKS){
         sks = SKS;
     }
-}
+} // End Class Mata Kuliah

@@ -1,3 +1,9 @@
+/* Nama file    : MMahasiswa.java
+ * Deskripsi    : berisi pemanggilan fungsi main
+ * Pembuat      : 24060124120030 - An Al Rivaldi
+ * Tanggal      : 03 Maret 2026
+ */
+
 public class MMahasiswa {
     public static void main(String[] args) {
         MataKuliah PBO = new MataKuliah("PBO", "Pemrograman Berorientasi Objek", 3);
@@ -14,5 +20,4 @@ public class MMahasiswa {
         System.out.println("Jumlah Mata Kuliah = " + M1.getJumlahMatKul());
         System.out.println("Jumlah SKS Mata Kuliah = " + M1.getJumlahSKS());
     }
-    
 }

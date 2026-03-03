@@ -54,4 +54,4 @@ public class Dosen {
     public void setProdi(String Prodi){
         prodi = Prodi;
     }
-}
+} // End Class Dosen

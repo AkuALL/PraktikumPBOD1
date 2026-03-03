@@ -41,4 +41,4 @@ public class Kendaraan {
     public void setJenis(String Jenis){
         jenis = Jenis;
     }
-}
+} //End Class Kendaraan

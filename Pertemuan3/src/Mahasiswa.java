@@ -128,4 +128,4 @@ public class Mahasiswa {
         System.out.println("Nama Dosen Wali: " + dosenWali.getNama());
         System.out.println("Kendaraan: " + kendaraan.getJenis());
     }
-}
+} // End Class Mahasiswa
