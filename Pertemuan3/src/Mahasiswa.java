@@ -112,6 +112,7 @@ public class Mahasiswa {
 
     // Menampilkan nim, nama, dan prodi mahasiswa
     public void printMhs(){
+        System.out.println("========== Data Pribadi Mahasiswa ==========");
         System.out.println("NIM: " + nim);
         System.out.println("Nama: " + nama);
         System.out.println("Prodi: " + prodi);
@@ -119,13 +120,18 @@ public class Mahasiswa {
 
     // menampilkan nim, nama, prodi, daftar mata kuliah yang diambil, data dosen wali, serta data kendaraan yang dimiliki mahasiswa.
     public void printDetailMhs(){
+        System.out.println("========== Data Pribadi Mahasiswa ==========");
         System.out.println("NIM: " + nim);
         System.out.println("Nama: " + nama);
         System.out.println("Prodi: " + prodi);
+        System.out.println("========== Daftar Mata Kuliah yang diambil ==========");
         for(int i = 0; i < listMatKul.size(); i++){
-            System.out.println(listMatKul.get(i).getNama());
+            System.out.println("Mata Kuliah ke-" + (i+1));
+            System.out.println("ID Matkul: " + listMatKul.get(i).getIdMatkul());
+            System.out.println("Nama Matkul: " + listMatKul.get(i).getNama());
+            System.out.println("SKS: " + listMatKul.get(i).getSks());
         }
-        System.out.println("Nama Dosen Wali: " + dosenWali.getNama());
-        System.out.println("Kendaraan: " + kendaraan.getJenis());
+        System.out.println("========== Data Dosen Wali ==========" + "\nNama: " + dosenWali.getNama() + "\nNIP: " + dosenWali.getNip() + "\nProdi: " + dosenWali.getProdi());
+        System.out.println("========== Data Kendaraan =========="  + "\nNo. Plat: " + kendaraan.getNoPlat() + "\nJenis Kendaraan: " + kendaraan.getJenis());
     }
 } // End Class Mahasiswa

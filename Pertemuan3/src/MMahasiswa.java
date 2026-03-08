@@ -17,7 +17,8 @@ public class MMahasiswa {
         M1.addMatKul(PBO);
         M1.addMatKul(MBD);
         M1.printDetailMhs();
-        System.out.println("Jumlah Mata Kuliah = " + M1.getJumlahMatKul());
-        System.out.println("Jumlah SKS Mata Kuliah = " + M1.getJumlahSKS());
+        System.out.println("========== Data Lainnya ==========");
+        System.out.println("Jumlah Mata Kuliah: " + M1.getJumlahMatKul());
+        System.out.println("Jumlah SKS Mata Kuliah: " + M1.getJumlahSKS());
     }
 }
