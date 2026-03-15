@@ -23,18 +23,18 @@ public class Persegi extends BangunDatar {
     // }
 
     // Konstruktor dengan menggunakan keyword this untuk memanggil atribut BangunDatar langsung
-    public Persegi (double sisi, String warna, String border) {
-        this.jmlSisi = 4;
-        this.warna = warna;
-        this.border = border;
-        this.sisi = sisi;
-    }
-
-    // // Konstruktor dengan keyword Super
     // public Persegi (double sisi, String warna, String border) {
-    //     super(4, warna, border);
+    //     this.jmlSisi = 4;
+    //     this.warna = warna;
+    //     this.border = border;
     //     this.sisi = sisi;
     // }
+
+    // Konstruktor dengan keyword Super
+    public Persegi (double sisi, String warna, String border) {
+        super(4, warna, border);
+        this.sisi = sisi;
+    }
 
     // Mengembalikan nilai sisi dari persegi
     public double getSisi() {
