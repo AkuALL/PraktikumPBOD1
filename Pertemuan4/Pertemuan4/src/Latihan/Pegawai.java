@@ -1,9 +1,13 @@
+/* Nama file    : Pegawai.java
+ * Deskripsi    : berisi atribut dan method dalam class Pegawai
+ * Pembuat      : 24060124120030 - An Al Rivaldi
+ * Tanggal      : 15 Maret 2026
+ */
+
 package Latihan;
 
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 
 public class Pegawai {
     // ======================= ATRIBUT =======================
@@ -86,6 +90,11 @@ public class Pegawai {
         return range.getYears() + " tahun " + range.getMonths() + " bulan";
     }
 
+    // Menghitung tunjangan dari Pegawai
+    public double hitungTunjangan(){
+        return 0;
+    }
+
     // Mengembalikan counterPegawai
     public int getCounterPegawai(){
         return counterPegawai;
@@ -94,10 +103,5 @@ public class Pegawai {
     // Mengembalikan detail informasi pegawai
     public void printInfo(){
         System.out.println("NIP             : " + getNIP());
-        System.out.println("Nama            : " + getNama());
-        System.out.println("Tanggal Lahir   : " + getTglLahir());
-        System.out.println("TMT             : " + getTMT());
-        System.out.println("Gaji Pokok      : " + getGajiPokok());
-        System.out.println("Masa Kerja      : " + hitungMasaKerja());
     }
 }
