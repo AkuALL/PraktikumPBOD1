@@ -113,7 +113,6 @@ public class Main {
         
         
         // BAGIAN 2
-
         System.out.println("\n======= Implementasi ZoomOut =======");
         // P1.zoomOut(); /*ERROR*/
         // System.out.println("Sisi P1 setelah zoomOut: " + P1.getSisi());
