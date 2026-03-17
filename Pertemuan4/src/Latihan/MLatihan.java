@@ -1,5 +1,5 @@
 /* Nama file    : MLatihan.java
- * Deskripsi    : berisi pemanggilan main
+ * Deskripsi    : berisi pemanggilan main.
  * Pembuat      : 24060124120030 - An Al Rivaldi
  * Tanggal      : 15 Maret 2026
  */
