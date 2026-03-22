@@ -55,10 +55,17 @@ public abstract class Manusia {
         return pendapatan;
     }
 
+    public static int getCounterMns(){
+        return counterMns;
+    }
+
     public void cetakInfo(){
-        
+        System.out.println("Nama                : " + getNama());
+        System.out.println("Tanggal Mulai Kerja : " + getTgl_mulai_kerja());
+        System.out.println("Alamat              : " + getAlamat());
+        System.out.println("Pendapatan          : " + getPendapatan());
+        System.out.println("Masa Kerja          : " + hitungMasaKerja());
     }
 
     public abstract int hitungMasaKerja();
-
 }
