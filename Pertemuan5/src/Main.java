@@ -1,7 +1,7 @@
 /* Nama file    : Main.java
  * Deskripsi    : berisi file Main
  * Pembuat      : 24060124120030 - An Al Rivaldi
- * Tanggal      : 10 Maret 2026
+ * Tanggal      : 17 Maret 2026
  */
 
 public class Main {

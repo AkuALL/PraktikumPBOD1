@@ -1,3 +1,9 @@
+/* Nama file    : Main.java
+ * Deskripsi    : berisi pemanggilan main
+ * Pembuat      : 24060124120030 - An Al Rivaldi
+ * Tanggal      : 20 Maret 2026
+ */
+
 package Latihan;
 
 import java.time.LocalDate;

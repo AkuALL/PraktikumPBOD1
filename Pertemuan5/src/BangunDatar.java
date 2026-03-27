@@ -1,7 +1,7 @@
 /* Nama file    : BangunDatar.java
  * Deskripsi    : berisi atribut dan method dalam class BangunDatar
  * Pembuat      : 24060124120030 - An Al Rivaldi
- * Tanggal      : 10 Maret 2026
+ * Tanggal      : 17 Maret 2026
  */
 
 public abstract class BangunDatar {
