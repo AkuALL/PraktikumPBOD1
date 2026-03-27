@@ -1,5 +1,5 @@
-/* Nama file    : Pengusaha.java
- * Deskripsi    : berisi atribut dan method dalam class Pengusaha
+/* Nama file    : Petani.java
+ * Deskripsi    : berisi atribut dan method dalam class Petani
  * Pembuat      : 24060124120030 - An Al Rivaldi
  * Tanggal      : 20 Maret 2026
  */
@@ -14,7 +14,7 @@ public class Petani extends Manusia implements Pajak {
     private String asal_kota;
     private static int counterPetani = 0;
     private static final int C = 0;
-    
+
     // ======================= METHOD =======================
     // Konstruktor tanpa parameter
     public Petani(){
