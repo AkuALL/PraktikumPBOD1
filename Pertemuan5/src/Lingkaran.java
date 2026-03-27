@@ -52,16 +52,19 @@ public class Lingkaran extends BangunDatar implements IResize{
     //     System.out.println("Jumlah objek bangun datar: " + counterBangunDatar);
     // }
 
+    // Implementasi method yang ada pada Interface Class IResize
     @Override
     public void zoomIn(){
         jari = jari * 1.1;
     }
 
+    // Implementasi method yang ada pada Interface Class IResize
     @Override
     public void zoomOut(){
         jari = jari * 0.9;
     }
 
+    // Implementasi method yang ada pada Interface Class IResize
     @Override
     public void zoom(int percent){
         jari = jari * percent/100;

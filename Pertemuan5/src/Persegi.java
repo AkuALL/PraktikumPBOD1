@@ -68,16 +68,19 @@ public class Persegi extends BangunDatar implements IResize {
         System.out.println("Sisi: " + sisi);
     }
 
+    // Implementasi method yang ada pada Interface Class IResize
     @Override
     public void zoomIn(){
         sisi = sisi * 1.1;
     }
 
+    // Implementasi method yang ada pada Interface Class IResize
     @Override
     public void zoomOut(){
         sisi = sisi * 0.9;
     }
 
+    // Implementasi method yang ada pada Interface Class IResize
     @Override
     public void zoom(int percent){
         sisi = sisi * percent/100;

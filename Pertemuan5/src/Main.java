@@ -7,7 +7,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("\n============== PERTEMUAN 4 ==============");
-                // BAGIAN 1
+        // BAGIAN 1
         // Nomor 2
         // Apakah konstruktor berparameter pada kelas Persegi dapat direalisasikan seperti berikut? Mengapa?
         // Jawab: Tidak bisa, dikarenakan atribut yang digunakan oleh Persegi merupakan atribut yang diwariskan oleh class BangunDatar.

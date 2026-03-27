@@ -52,6 +52,7 @@ public class Petani extends Manusia implements Pajak {
     }
 
     // Implementasi method yang ada pada Interface Class Pajak
+    @Override
     public double hitungPajak(){
         return 0;
     }

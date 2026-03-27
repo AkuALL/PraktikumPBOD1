@@ -52,6 +52,7 @@ public class Pengusaha extends Manusia implements Pajak {
     }
 
     // Implementasi method yang ada pada Interface Class Pajak
+    @Override
     public double hitungPajak(){
         return 0.15 * getPendapatan();
     }
