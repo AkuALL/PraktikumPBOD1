@@ -30,5 +30,5 @@ public class AngkaSial{
     }
 }
 
-// Tidak. Karena ketika angka == 13, perintah throw pada baris 10 langsung menghentikan alur metode dan melempar eksepsi sebelum program sempat mencapai baris 12.
-// Ya. Baris 21 adalah blok catch yang berfungsi menangkap eksepsi yang dilempar. Program akan langsung melompat ke baris ini untuk menangani kesalahan agar program tidak crash.
+// Tidak. Karena ketika angka == 13, throw pada baris 10 langsung berhenti eksekusi dan melempar exception sebelum program sempat mencapai baris 12.
+// Ya. Baris 21 adalah blok catch yang berfungsi menangkap exception yang dilempar. Program akan langsung mengeksekusi ke baris ini untuk menangani kesalahan agar tidak crash.
