@@ -3,8 +3,9 @@
  * Deskripsi : Program penggunaan exception buatan sendiri
  *             Pengenalan klausa 'throw' dan 'throws'
  * Nama      : An Al Rivaldi
- * NIM       : 2
- * */
+ * NIM       : 24060124120030
+ * Tanggal   : 24 - 03 - 2026
+ **/
 
 public class AngkaSial{
     

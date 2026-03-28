@@ -1,8 +1,12 @@
 /**
  * File      : Asersi2.java
  * Deskripsi : Program untuk demo asersi, yang akan menolak input
- * jari-jari lingkaran yang bernilai nol
- * */
+ *             jari-jari lingkaran yang bernilai nol
+ * Nama      : An Al Rivaldi
+ * NIM       : 24060124120030
+ * Tanggal   : 24 - 03 - 2026
+ **/
+
 //class Lingkaran
 class Lingkaran{
     private double jariJari;

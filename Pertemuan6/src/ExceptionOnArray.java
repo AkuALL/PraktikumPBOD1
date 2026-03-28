@@ -1,7 +1,10 @@
 /**
  * File      : ExceptionOnArray.java
  * Deskripsi : Program penggunaan eksepsi menggunakan class library Java
- * */
+ * Nama      : An Al Rivaldi
+ * NIM       : 24060124120030
+ * Tanggal   : 24 - 03 - 2026 
+**/
 
 public class ExceptionOnArray{
     public static void main(String[] args) {
