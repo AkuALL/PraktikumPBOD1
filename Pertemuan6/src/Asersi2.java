@@ -25,3 +25,6 @@ public class Asersi2{
                 +kelilingLingkaran);
     }
 }
+
+// Kesalahan terletak pada penempatan validasi jari-jari yang ada di luar kelas Lingkaran.
+// Selain itu, penggunaan asersi kurang tepat untuk validasi input karena asersi dapat dinonaktif saat runtime.

@@ -1,8 +1,11 @@
 /**
  * File      : AngkaSial.java
  * Deskripsi : Program penggunaan exception buatan sendiri
- * Pengenalan klausa 'throw' dan 'throws'
+ *             Pengenalan klausa 'throw' dan 'throws'
+ * Nama      : An Al Rivaldi
+ * NIM       : 2
  * */
+
 public class AngkaSial{
     
     public void cobaAngka(int angka) throws AngkaSialException{
@@ -25,3 +28,6 @@ public class AngkaSial{
         }
     }
 }
+
+// Tidak. Karena ketika angka == 13, perintah throw pada baris 10 langsung menghentikan alur metode dan melempar eksepsi sebelum program sempat mencapai baris 12.
+// Ya. Baris 21 adalah blok catch yang berfungsi menangkap eksepsi yang dilempar. Program akan langsung melompat ke baris ini untuk menangani kesalahan agar program tidak crash.
