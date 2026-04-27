@@ -9,20 +9,24 @@ public class Dosen extends Civitasakademika {
     /* *******************ATRIBUT******************* */
     private String NIP;
     /* *******************METHOD******************* */
+    // Konstruktor tanpa parameter
     public Dosen(){
         super();
         this.NIP = "-999";
     }
 
+    // Konstruktor dengan parameter
     public Dosen(String Nama, String NIP){
         super(Nama);
         this.NIP = NIP;
     }
 
+    // Mutator NIP
     public void setNomor(String NIP){
         this.NIP = NIP;
     }
 
+    // Selektor NIP
     @Override
     public String getNomor(){
         return NIP;

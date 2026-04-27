@@ -11,11 +11,13 @@ public class Seminar {
     private int banyakpeserta;
     
     /* *******************METHOD******************* */
+    // Konstruktor seminar
     public Seminar() {
         pesertas = new Civitasakademika[100];
         banyakpeserta = 0;
     }
 
+    // Method menambahkan peserta ke dalam list pesertas
     public void registrasi(Civitasakademika c) {
         if (banyakpeserta < 100) {
             pesertas[banyakpeserta] = c;
@@ -26,10 +28,12 @@ public class Seminar {
         }
     }
 
+    // Selektor banyakpeserta
     public int countPeserta() {
         return banyakpeserta;
     }
 
+    // Menampilkan daftar NIM/NIP dan nama peserta 
     public void tampilPeserta() {
         // Kamus
         int i;
@@ -37,11 +41,12 @@ public class Seminar {
         System.out.println("Daftar Peserta:");
         for (i = 0; i < banyakpeserta; i++) {
             System.out.println(
-                i+1 + pesertas[i].getNomor() + " - " + pesertas[i].getNama()
+                "> " + pesertas[i].getNomor() + " - " + pesertas[i].getNama()
             );
         }
     }
 
+    // Menampilkan banyaknya peserta yang merupakan Mahasiswa
     public int countMahasiswa() {
         // Kamus
         int count, i;
