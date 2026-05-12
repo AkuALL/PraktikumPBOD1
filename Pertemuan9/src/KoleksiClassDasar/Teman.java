@@ -47,9 +47,12 @@ public class Teman {
 
     // Menghapus nama teman dari Lnama berdasarkan nama yang diberikan
     public void delNama(String nama){
-        for (int i = 0; i < nbelm; i++){
+        // Kamus Lokal
+        int i, j;
+        // Algoritma
+        for (i = 0; i < nbelm; i++){
             if (Lnama.get(i).equals(nama)){
-                for (int j = i; j < nbelm - 1; j++){
+                for (j = i; j < nbelm - 1; j++){
                     Lnama.set(j, Lnama.get(j + 1));
                 }
                 nbelm--;
@@ -61,7 +64,10 @@ public class Teman {
 
     // Memeriksa apakah nama teman sudah ada dalam Lnama
     public boolean isMember(String nama){
-        for (int i = 0; i < nbelm; i++){
+        // Kamus Lokal 
+        int i;
+        // Algoritma
+        for (i = 0; i < nbelm; i++){
             if (Lnama.get(i).equals(nama)){
                 return true;
             }
@@ -71,7 +77,10 @@ public class Teman {
 
     // Mengganti nama teman yang sudah ada dengan nama baru
     public void gantiNama(String nama, String namaBaru){
-        for (int i = 0; i < nbelm; i++){
+        // Kamus Lokal 
+        int i;
+        // Algoritma
+        for (i = 0; i < nbelm; i++){
             if (Lnama.get(i).equals(nama)){
                 Lnama.set(i, namaBaru);
                 System.out.println("Nama berhasil diganti");
@@ -82,8 +91,11 @@ public class Teman {
 
     // Menghitung jumlah kemunculan nama dalam Lnama
     public int countNama(String nama){
+        // Kamus Lokal 
+        int i;
         int count = 0;
-        for (int i = 0; i < nbelm; i++){
+        // Algoritma
+        for (i = 0; i < nbelm; i++){
             if (Lnama.get(i).equals(nama)){
                 count++;
             }
@@ -93,8 +105,11 @@ public class Teman {
 
     // Menampilkan semua nama teman dalam Lnama
     public void showTeman(){
+        // Kamus Lokal 
+        int i;
+        // Algoritma
         System.out.println("Daftar Teman:");
-        for (int i = 0; i < nbelm; i++){
+        for (i = 0; i < nbelm; i++){
             System.out.println((i + 1) + ". " + Lnama.get(i));
         }
     }
